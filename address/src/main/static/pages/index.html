@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Address Boook</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+
+    <meta http-equiv="cache-control" content="max-age=0"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
+    <meta http-equiv="expires" content="0"/>
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+
+    <link rel="stylesheet" href="resources/css/bootstrap.css">
+    <link rel="stylesheet" href="resources/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="resources/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="resources/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="resources/css/datatables.min.css">
+
+</head>
+<body>
+
+<div id="body" class="container"></div>
+
+<script type="text/javascript" src="resources/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="resources/js/bootstrap.js"></script>
+<script type="text/javascript" src="resources/js/fontawesome-all.min.js"></script>
+
+<script type="text/javascript" src="resources/js/datatables.min.js"></script>
+<script type="text/javascript" src="resources/application/application.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        Application.start({
+            contextPath: "http://localhost:8080",
+            debug: true
+        });
+    });
+</script>
+
+
+<div class="modal fade d-none" id="exampleModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary save-changes">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
